@@ -2,7 +2,7 @@ import React from 'react';
 
 const QuoteBox = (props)=> {
     let {quote, author} = props.quoteData;
-    let url = `twitter.com/intent/tweet?text=${encodeURIComponent(`${quote}${author}`)}`
+    let url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${quote}${author}`)}`;
     return (
         <div id="quote-box">
             <p id="text">
