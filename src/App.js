@@ -3,14 +3,6 @@ import QuoteBox from './components/QuoteBox';
 
 import './App.css';
 
-/*
-//import Navbar from './components/navbar' 
-//import mainContentContainer from './components/
-//import header from './components/
-get random quotes from GH gist
-
-*/
-
 
 class App extends React.Component {
   constructor(){
@@ -42,7 +34,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <p>some stuff being tested here</p>
-        <p>TEST!!!</p>
         <QuoteBox quoteData={this.state.currentQuote} click={this.handleClick} />
       </div>
     );

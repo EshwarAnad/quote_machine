@@ -1,17 +1,18 @@
 import React from 'react';
 
 const QuoteBox = (props)=> {
-
+    let {quote, author} = props.quoteData;
+    let url = `twitter.com/intent/tweet?text=${encodeURIComponent(`${quote}${author}`)}`
     return (
         <div id="quote-box">
             <p id="text">
-            {props.quoteData.quote} 
+            <b>{quote}</b> 
             </p>
             <p id="author">
-            {props.quoteData.author} 
+            <i>-{author}</i> 
             </p>
+            <a href={url} id="tweet-quote">Tweet this quote</a>
             <button id="new-quote" onClick={props.click}>New Quote</button>
-            <a href="twitter.com/intent/tweet" id="tweet-quote">Tweet this quote</a>
         </div>
     );
 }
