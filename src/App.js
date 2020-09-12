@@ -33,7 +33,8 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <p>some stuff being tested here</p>
+        <h2>Random Quote Machine</h2>
+        <hr />
         <QuoteBox quoteData={this.state.currentQuote} click={this.handleClick} />
       </div>
     );

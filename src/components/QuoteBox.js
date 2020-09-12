@@ -12,6 +12,7 @@ const QuoteBox = (props)=> {
             <i>-{author}</i> 
             </p>
             <a href={url} id="tweet-quote">Tweet this quote</a>
+            <hr />
             <button id="new-quote" onClick={props.click}>New Quote</button>
         </div>
     );
